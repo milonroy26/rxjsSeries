@@ -1,0 +1,8 @@
+<div class="promoise container">
+    <h2>Promoise</h2>
+
+    <button (click)="loadData()">Get Data</button>
+    <ul *ngFor="let user of userData">
+        <li> {{user.name}} --- {{user.email}} </li>
+    </ul>
+</div>
