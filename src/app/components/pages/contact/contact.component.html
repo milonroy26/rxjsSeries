@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xl-3"></div>
+        <div class="col-xl-6 login">
+            <h5 class="fw-bold mb-4">Contact Up Account!</h5>
+            <div>
+                <div class="mb-3">
+                    <input [(ngModel)]="inName" class="form-control" placeholder="name" type="text">
+                </div>
+                <div class="mb-3">
+                    <input [(ngModel)]="inEmail" placeholder="email" type="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <select [(ngModel)]="issue" class="form-select" aria-label="Default select example">
+                        <option selected>Select a service package you're interested in..</option>
+                        <option value="1">Basic</option>
+                        <option value="2">Standard</option>
+                        <option value="3">Premium</option>
+                        <option value="3">Not sure</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <textarea [(ngModel)]="message" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Enter your message"></textarea>
+                </div>
+
+                <button (click)="userData()" class="btn btn-primary">Semd Data</button>
+            </div>
+        </div>
+        <div class="col-xl-3"></div>
+    </div>
+</div>

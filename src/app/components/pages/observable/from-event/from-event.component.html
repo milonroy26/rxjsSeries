@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xl-3">
+            <div class="card">
+                <h5 class="card-header">Add Video</h5>
+                <div class="card-body">
+                    <p class="card-text">Your video Add to</p>
+                    <button (click)="addBtn()" class="btn btn-primary">Add me</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3">
+            <div class="card">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body">
+                    <div class="card-text">
+                        <ul *ngFor="let video of counts">
+                            <li class="nav-link"> {{video}} </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3">
+            <div class="card">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body">
+                    <div class="card-text">
+                        <ul *ngFor="let video of counts">
+                            <li class="nav-link"> {{video}} </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
