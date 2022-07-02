@@ -5,6 +5,7 @@ import { FromEventComponent } from './components/pages/observable/from-event/fro
 import { ListComponent } from './components/pages/observable/list/list.component';
 import { ObservableComponent } from './components/pages/observable/observable.component';
 import { PromoiseComponent } from './components/pages/promoise/promoise.component';
+import { MaterialComponent } from './material/material.component';
 
 const routes: Routes = [
   { path: 'promoise', component: PromoiseComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
     { path: 'from', component: FromEventComponent}
   ]},
   { path: 'contact', component: ContactComponent},
+  { path: 'material', component: MaterialComponent}
 ];
 
 @NgModule({

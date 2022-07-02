@@ -13,6 +13,17 @@ import { FromEventComponent } from './components/pages/observable/from-event/fro
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { ContactService } from './services/contact.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialComponent } from './material/material.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
+
+
 
 @NgModule({
   declarations: [
@@ -22,13 +33,21 @@ import { ContactService } from './services/contact.service';
     ObservableComponent,
     ListComponent,
     FromEventComponent,
-    ContactComponent
+    ContactComponent,
+    MaterialComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatDatepickerModule,
+    MatFormFieldModule
   ],
   providers: [
     ApiService,
